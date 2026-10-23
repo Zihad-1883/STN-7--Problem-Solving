@@ -43,3 +43,44 @@ var gradingStudents = function(grades) {
 };
 
 
+// Problem 3: Time Conversion
+
+/**
+ * @param {string} s
+ * @return {string}
+ */
+var timeConversion = function(s) {
+    let output = "";
+    let hourTime = Number(s.substring(0,2));
+    if(s.includes("PM")){
+        if(s.startsWith("12")){
+           for(let i = 0; i < s.length - 2; i++){
+            output += s[i]
+        } 
+        return output;
+        } else {
+            hourTime += 12
+        output += hourTime.toString();
+        for(let i = 2; i < s.length - 2; i++){
+            output += s[i]
+        }
+        return output;
+        }
+        
+    } else {
+        if(s.startsWith("12")){
+            output += "00";
+            for(let i = 2; i < s.length - 2; i++){
+            output += s[i];
+        }
+        } else{
+            for(let i = 0; i < s.length - 2; i++){
+            output += s[i];
+        }
+        }
+        
+        return output;
+    }
+
+    return output;
+};

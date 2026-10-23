@@ -136,3 +136,22 @@ var positiveSum = function(arr) {
     }
     return sum;
 };
+
+
+// Problem 7: Grasshopper — Summation
+
+/**
+ * @param {number} num
+ * @return {number}
+ */
+var summation = function(num) {
+    return (num * (num + 1)) / 2;
+
+    // iterate version :
+
+    //  let sum = 0;
+    // for (let i = 1; i <= num; i++) {
+    //     sum += i;
+    // }
+    // return sum;
+};

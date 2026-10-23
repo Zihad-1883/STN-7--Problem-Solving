@@ -84,3 +84,22 @@ var timeConversion = function(s) {
 
     return output;
 };
+
+
+// Problem 4: String Repeat
+
+/**
+ * @param {number} n
+ * @param {string} s
+ * @return {string}
+ */
+var repeatStr = function(n, s) {
+    if(n === 0) return "";
+    let output = "";
+    for(let i = 0; i<n; i++){
+        output += s;
+    }
+    return output
+};
+
+console.log(repeatStr(4 , "a"))

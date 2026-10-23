@@ -147,5 +147,26 @@ var positiveSum = function(arr) {
 var summation = function(num) {
     return (num * (num + 1)) / 2;
 
+    // iterate version :
 
+    //  let sum = 0;
+    // for (let i = 1; i <= num; i++) {
+    //     sum += i;
+    // }
+    // return sum;
 };
+
+
+// Problem 8: Convert a Boolean to a String
+
+/**
+ * @param {boolean} b
+ * @return {string}
+ */
+var booleanToString = function(b) {
+    if(b === true) return "true" 
+    return "false"
+
+    // alternative : return b.toString();
+};
+

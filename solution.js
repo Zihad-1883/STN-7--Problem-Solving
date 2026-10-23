@@ -192,3 +192,20 @@ var fizzBuzz = function(n) {
     }
     return output;
 };
+
+
+// Problem 10: Running Sum of 1D Array
+
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var runningSum = function(nums) {
+    let output = [];
+    let currentSum = 0;
+    for(let i = 0; i < nums.length; i++){
+        currentSum += nums[i];
+        output.push(currentSum)
+    }
+    return output
+};

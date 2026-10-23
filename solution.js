@@ -102,4 +102,21 @@ var repeatStr = function(n, s) {
     return output
 };
 
-console.log(repeatStr(4 , "a"))
+
+// Problem 5: Reversed Strings
+
+/**
+ * @param {string} str
+ * @return {string}
+ */
+var solution = function(str) {
+    if(str.length === 0) return "";
+    if(str.length === 1) return str;
+    let output = "";
+    for(let i = str.length - 1; i >= 0; i--){
+        output += str[i];
+    }
+    return output;
+};
+
+

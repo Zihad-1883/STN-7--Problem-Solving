@@ -268,4 +268,24 @@ var containsDuplicate = function(nums) {
     return false;
 };
 
-console.log(containsDuplicate( [1, 1, 1, 3, 3, 4, 3, 2, 4, 2]))
+
+// Problem 14: Move Zeroes
+
+/**
+ * @param {number[]} nums
+ * @return {void}
+ */
+var moveZeroes = function(nums) {
+    let pointer = 0;
+
+    for(let i = 0; i < nums.length; i++){
+        if(nums[i] !== 0){
+            nums[pointer] = nums[i];
+            pointer++;
+        }
+    }
+
+    for(let i = pointer; i < nums.length; i++){
+        nums[i] = 0;
+    }
+};
